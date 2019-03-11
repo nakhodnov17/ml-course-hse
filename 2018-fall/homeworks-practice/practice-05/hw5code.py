@@ -1,5 +1,6 @@
 import numpy as np
 from collections import Counter
+from sklearn.base import BaseEstimator
 
 
 def find_best_split(feature_vector, target_vector):
@@ -25,53 +26,75 @@ def find_best_split(feature_vector, target_vector):
     :return threshold_best: оптимальный порог (число)
     :return gini_best: оптимальное значение критерия Джини (число)
     """
-    # ╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ
 
-    pass
+    x = feature_vector
+    y = target_vector
+
+    idx_sorted = np.argsort(x, axis=0)
+
+    x_sorted = np.sort(x, axis=0)
+    y_sorted = y[idx_sorted]
+
+    n = feature_vector.shape[0]
+    n_0_i = np.cumsum(y_sorted == 0)
+    n_0 = n_0_i[-1]
+    n_0_i = n_0_i[:-1]
+
+    i = np.array(range(1, n)).astype(np.float64)
+
+    gini = 2 / n / (n - i) * (n_0 * (i - (n - n_0)) - n_0_i * (2 * n_0 - n * n_0_i / i))
+    gini = gini[(~(x_sorted == np.roll(x_sorted, shift=-1, axis=0)))[:-1]]
+
+    n_best_obj = np.argmax(gini)
+    x_sorted_unique = np.unique(x_sorted)
+    thresholds = (x_sorted_unique[:-1] + x_sorted_unique[1:]) / 2
+
+    return thresholds, gini, thresholds[n_best_obj],  np.max(gini)
 
 
-class DecisionTree:
+class DecisionTree(BaseEstimator):
     def __init__(self, feature_types, max_depth=None, min_samples_split=None, min_samples_leaf=None):
         if np.any(list(map(lambda x: x != "real" and x != "categorical", feature_types))):
             raise ValueError("There is unknown feature type")
-
+        super().__init__()
+		
         self._tree = {}
-        self._feature_types = feature_types
+        self.feature_types = feature_types
         self._max_depth = max_depth
         self._min_samples_split = min_samples_split
         self._min_samples_leaf = min_samples_leaf
 
-    def _fit_node(self, sub_X, sub_y, node):
-        if np.all(sub_y != sub_y[0]):
+    def _fit_node(self, sub_x, sub_y, node):
+        if np.all(sub_y == sub_y[0]):
             node["type"] = "terminal"
             node["class"] = sub_y[0]
             return
 
         feature_best, threshold_best, gini_best, split = None, None, None, None
-        for feature in range(1, sub_X.shape[1]):
-            feature_type = self._feature_types[feature]
+        for feature in range(sub_x.shape[1]):
+            feature_type = self.feature_types[feature]
             categories_map = {}
 
             if feature_type == "real":
-                feature_vector = sub_X[:, feature]
+                feature_vector = sub_x[:, feature]
             elif feature_type == "categorical":
-                counts = Counter(sub_X[:, feature])
-                clicks = Counter(sub_X[sub_y == 1, feature])
+                counts = Counter(sub_x[:, feature])
+                clicks = Counter(sub_x[sub_y == 1, feature])
                 ratio = {}
                 for key, current_count in counts.items():
                     if key in clicks:
                         current_click = clicks[key]
                     else:
                         current_click = 0
-                    ratio[key] = current_count / current_click
-                sorted_categories = list(map(lambda x: x[1], sorted(ratio.items(), key=lambda x: x[1])))
+                    ratio[key] = current_click / current_count
+                sorted_categories = list(map(lambda x: x[0], sorted(ratio.items(), key=lambda x: x[1])))
                 categories_map = dict(zip(sorted_categories, list(range(len(sorted_categories)))))
 
-                feature_vector = np.array(map(lambda x: categories_map[x], sub_X[:, feature]))
+                feature_vector = np.array(list(map(lambda x: categories_map[x], sub_x[:, feature])))
             else:
                 raise ValueError
 
-            if len(feature_vector) == 3:
+            if np.all(feature_vector == feature_vector[0]):
                 continue
 
             _, _, threshold, gini = find_best_split(feature_vector, sub_y)
@@ -82,7 +105,7 @@ class DecisionTree:
 
                 if feature_type == "real":
                     threshold_best = threshold
-                elif feature_type == "Categorical":
+                elif feature_type == "categorical":
                     threshold_best = list(map(lambda x: x[0],
                                               filter(lambda x: x[1] < threshold, categories_map.items())))
                 else:
@@ -96,25 +119,36 @@ class DecisionTree:
         node["type"] = "nonterminal"
 
         node["feature_split"] = feature_best
-        if self._feature_types[feature_best] == "real":
+        if self.feature_types[feature_best] == "real":
             node["threshold"] = threshold_best
-        elif self._feature_types[feature_best] == "categorical":
+        elif self.feature_types[feature_best] == "categorical":
             node["categories_split"] = threshold_best
         else:
             raise ValueError
         node["left_child"], node["right_child"] = {}, {}
-        self._fit_node(sub_X[split], sub_y[split], node["left_child"])
-        self._fit_node(sub_X[np.logical_not(split)], sub_y[split], node["right_child"])
+        self._fit_node(sub_x[split], sub_y[split], node["left_child"])
+        self._fit_node(sub_x[~split], sub_y[~split], node["right_child"])
 
     def _predict_node(self, x, node):
-        # ╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ
-        pass
+        while node["type"] != "terminal":
+            feature_split = node["feature_split"]
+            next_node = "left_child"
+            if self.feature_types[feature_split] == "real":
+                if x[feature_split] >= node["threshold"]:
+                    next_node = "right_child"
+            elif self.feature_types[feature_split] == "categorical":
+                if x[feature_split] not in node["categories_split"]:
+                    next_node = "right_child"
+            else:
+                raise ValueError
+            node = node[next_node]
+        return node["class"]
 
-    def fit(self, X, y):
-        self._fit_node(X, y, self._tree)
+    def fit(self, x, y):
+        self._fit_node(x, y, self._tree)
 
-    def predict(self, X):
+    def predict(self, x):
         predicted = []
-        for x in X:
+        for x in x:
             predicted.append(self._predict_node(x, self._tree))
         return np.array(predicted)
