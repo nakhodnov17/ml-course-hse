@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6cc226cd-f36b-4f7a-a9e6-9a2b27294364" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.gitmodules" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>color_iter</find>
+      <find>Y</find>
+      <find>_logunnormedunweightpdf</find>
+      <find>/</find>
+      <find>101</find>
+      <find>logpdf</find>
+      <find>_e_step</find>
+      <find>np.log</find>
+      <find>reg_covar</find>
+      <find>/ (tp + fn)</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>_color_iter</replace>
+      <replace>y</replace>
+      <replace>_logunweightpdf</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/BGSegmentation.ipynb" />
+        <option value="$PROJECT_DIR$/EMMixture.py" />
+        <option value="$PROJECT_DIR$/metrics.py" />
+        <option value="$PROJECT_DIR$/utils.py" />
+        <option value="$PROJECT_DIR$/visualization.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="948" />
+    <option name="width" value="981" />
+    <option name="height" value="1032" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="bgsubstraction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bgsubstraction" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="EMMixture" type="PythonConfigurationType" factoryName="Python">
+      <module name="bgsubstraction" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://nahodnov17@35.238.95.24:22/usr/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="/home/nahodnov17/bgsub" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EMMixture.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6cc226cd-f36b-4f7a-a9e6-9a2b27294364" name="Default Changelist" comment="" />
+      <created>1556452966282</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556452966282</updated>
+      <workItem from="1556452967796" duration="31886000" />
+      <workItem from="1556563618938" duration="59108000" />
+      <workItem from="1557229566396" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="91004000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21261115" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="File Transfer" order="0" weight="0.32978722" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32978722" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.32624114" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.43617022" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32978722" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32978722" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.63297874" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="14" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="4" weight="0.32983023" />
+      <window_info anchor="right" id="SciView" order="5" weight="0.5755861" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32983023" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="model.predict_probas(pixel).shape" language="Python" />
+        <watch expression="pixel.shape" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/bgsubstraction$EMMixture.coverage" NAME="EMMixture Coverage Results" MODIFIED="1556816295097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/home/nahodnov17/bgsub" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>model.predict_probas(pixel).shape</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>pixel.shape</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>pixel</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>pik</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>model.predict_probas(pixel)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>model.predict_probas([pixel])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>model.predict_probas</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>model.predict_proba</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>model</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>parameters.covariances[4]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/numpy/linalg/linalg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="551" column="50" lean-forward="true" selection-start-line="551" selection-start-column="50" selection-end-line="551" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py" />
+    <entry file="file://$PROJECT_DIR$/BGSegmentation.ipynb" />
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/numpy/core/fromnumeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="3014" column="4" selection-start-line="3014" selection-start-column="4" selection-end-line="3014" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python37/Lib/collections/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="315" column="4" selection-start-line="315" selection-start-column="4" selection-end-line="315" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/None0000000.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="73" column="22" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visualization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EMMixture.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="e#127#8587#0" />
+            <element signature="e#263#416#0" />
+            <element signature="e#459#1812#0" />
+            <element signature="e#579#1786#0" />
+            <element signature="e#1081#1296#0" />
+            <element signature="e#1515#1786#0" />
+            <element signature="e#1915#2016#0" />
+            <element signature="e#2114#2139#0" />
+            <element signature="e#2236#2620#0" />
+            <element signature="e#2619#3002#0" />
+            <element signature="e#2742#2975#0" />
+            <element signature="e#3068#3767#0" />
+            <element signature="e#3243#3475#0" />
+            <element signature="e#3872#4269#0" />
+            <element signature="e#4330#4355#0" />
+            <element signature="e#4455#4851#0" />
+            <element signature="e#4912#5536#0" />
+            <element signature="e#5026#5506#0" />
+            <element signature="e#5597#5933#0" />
+            <element signature="e#5614#5822#0" />
+            <element signature="e#6093#6375#0" />
+            <element signature="e#6556#6581#0" />
+            <element signature="e#6443#6633#0" />
+            <element signature="e#6689#7105#0" />
+            <element signature="e#6798#7080#0" />
+            <element signature="e#7258#7542#0" />
+            <element signature="e#6042#6187#1" />
+            <element signature="e#7402#7586#0" />
+            <element signature="e#7612#7996#0" />
+            <element signature="e#8027#8546#0" />
+            <element signature="e#8027#8094#0" />
+            <element signature="e#8588#11378#0" />
+            <element signature="e#8806#9205#0" />
+            <element signature="e#6638#6951#0" />
+            <element signature="e#6822#6903#0" />
+            <element signature="e#6997#7099#0" />
+            <element signature="e#9738#11108#0" />
+            <element signature="e#9784#11088#0" />
+            <element signature="e#10016#10759#0" />
+            <element signature="e#7602#7821#0" />
+            <element signature="e#10861#11088#0" />
+            <element signature="e#10846#10922#0" />
+            <element signature="e#8317#8401#0" />
+            <element signature="e#8453#8504#0" />
+            <element signature="e#11030#11089#0" />
+            <element signature="e#8473#8555#0" />
+            <element signature="e#11713#14982#0" />
+            <element signature="e#8608#8776#0" />
+            <element signature="e#8885#9341#0" />
+            <element signature="e#8876#8937#1" />
+            <element signature="e#9013#9184#0" />
+            <element signature="e#12719#13482#0" />
+            <element signature="e#11985#12120#1" />
+            <element signature="e#12772#13298#0" />
+            <element signature="e#12989#13427#0" />
+            <element signature="e#9515#9955#0" />
+            <element signature="e#13835#13988#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metrics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-62">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+          <folding>
+            <element signature="e#98#269#0" />
+            <element signature="e#307#479#0" />
+            <element signature="e#517#687#0" />
+            <element signature="e#725#896#0" />
+            <element signature="e#976#1058#0" />
+            <element signature="e#1189#1395#0" />
+            <element signature="e#1196#1463#0" />
+            <element signature="e#1275#1435#0" />
+            <element signature="e#1679#1945#0" />
+            <element signature="e#1758#1917#0" />
+            <element signature="e#2058#2392#0" />
+            <element signature="e#2137#2364#0" />
+            <element signature="e#2417#2568#0" />
+            <element signature="e#1814#2084#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

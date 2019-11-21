@@ -1,0 +1,19 @@
+<component name="ProjectDictionaryState">
+  <dictionary name="nahod">
+    <words>
+      <w>clusterizer</w>
+      <w>covar</w>
+      <w>logpdf</w>
+      <w>logunnormedpdf</w>
+      <w>logunnormedunweightpdf</w>
+      <w>logunweightpdf</w>
+      <w>mahalanobis</w>
+      <w>proba</w>
+      <w>probas</w>
+      <w>rocauc</w>
+      <w>segmentations</w>
+      <w>segmenter</w>
+      <w>unnormed</w>
+    </words>
+  </dictionary>
+</component>
